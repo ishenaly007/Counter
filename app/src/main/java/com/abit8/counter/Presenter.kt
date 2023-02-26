@@ -1,8 +1,8 @@
 package com.abit8.counter
 
-class Presenter() {
-    val model = Ingector.getModel()
-    lateinit var counterView: CounterView
+class Presenter {
+    private val model = Ingector.getModel()
+    private lateinit var counterView: CounterView
 
     fun plus() {
         model.plus()
